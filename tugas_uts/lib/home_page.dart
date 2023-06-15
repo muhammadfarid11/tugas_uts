@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:tugas_uts/api_page.dart';
 import 'package:tugas_uts/job_page.dart';
 
 class HomePage extends StatefulWidget {
@@ -713,9 +714,15 @@ class HomePageState extends State<HomePage> {
                         ],
                       ),
                     ),
+                    Container(
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(15)),
+                        width: MediaQuery.of(context).size.width,
+                        height: 500,
+                        child: apiPage()),
                     SizedBox(
-                      height: 200,
-                    )
+                      height: 75,
+                    ),
                   ],
                 ),
               ),
